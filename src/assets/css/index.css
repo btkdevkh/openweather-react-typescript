@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  font-family: 'Poppins', 'Arial', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  padding: 15px;
+  background-color: #54416d;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  margin: 0 10px;
+}
+
+/* Home screen */
+main {
+  margin: 5px 10px;
+}
+main form {
+  text-align: center;
+}
+main form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ddd;
+}
+main form input:focus {
+  outline: 0;
+}
+main form button {
+  width: 100%;
+  margin-top: 5px;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: #2b235a;
+}
+
+/* Meteo screen */
+.meteoInfo {
+  font-weight: 400;
+  padding-top: 15px;
+  text-align: center;
+}
+.return {
+  width: 100px;
+  margin: 15px auto;
+  border-radius: 3px;
+  padding: 5px 15px;
+  display:  block;
+  text-align: center;
+  background-color: #2b235a;
+}
+
+/* Responsive */
+@media screen and (min-width: 450px) {
+  main form input,
+  main form button {
+    width: 320px;
+    margin: auto;
+  }
+  main form button {
+    margin-top: 5px;
+  }
+}
